@@ -1,4 +1,5 @@
 var c 		 = document.getElementById('c');
+var buttons	 = document.getElementById('buttons');
 var _ 		 = c.getContext('2d');
 var h1 		 = document.querySelector('h1');
 var RAD 	 = Math.PI / 180;
@@ -39,9 +40,11 @@ var listen = function () {
     h1.style.color = 'rgba(238,85,85,'+alpha+')';
     document.body.style.backgroundColor = 'rgba(238,85,85,'+alpha+')';
     if (alpha <= 0.3) {
-      alpha += 0.02;
+      alpha += 0.04;
     } else {
       h1.style.color = 'rgb(247,164,164)';
+	  h1.innerHTML = "New text!";
+	  buttons.style.display = "block";
     }
     return false;
   };
