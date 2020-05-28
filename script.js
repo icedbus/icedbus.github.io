@@ -76,5 +76,5 @@ window.requestAnimFrame = (function(){
 })();
 
 function promo() {
-  alert("I known you'd say yes! Love you!");
+  alert("I knew you would say yes! Love you!");
 }
