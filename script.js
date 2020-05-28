@@ -40,10 +40,10 @@ var listen = function () {
     h1.style.color = 'rgba(238,85,85,'+alpha+')';
     document.body.style.backgroundColor = 'rgba(238,85,85,'+alpha+')';
     if (alpha <= 0.3) {
-      alpha += 0.04;
+      alpha += 0.03;
     } else {
       h1.style.color = 'rgb(247,164,164)';
-	  h1.innerHTML = "New text!";
+	  h1.innerHTML = "Will you be my Valentine?";
 	  buttons.style.display = "block";
     }
     return false;
@@ -74,3 +74,7 @@ window.requestAnimFrame = (function(){
   requestAnimFrame(animloop);
   render();
 })();
+
+function promo() {
+  alert("I known you'd say yes! Love you!");
+}
