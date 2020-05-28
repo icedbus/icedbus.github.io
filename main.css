@@ -16,7 +16,7 @@ body {
 }
 h1 {
   width: 100vw;
-  height: 600px;
+  height: 100vw;
   position: absolute;
   z-index: 2;
   color: #eee;
